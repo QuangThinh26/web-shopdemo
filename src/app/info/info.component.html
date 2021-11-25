@@ -1,0 +1,26 @@
+<div class="info">
+    <div class="account">
+        <div *ngIf="isShowform" class="input-account">
+            <input type="text" placeholder=" Nhập tên người dùng" [(ngModel)]="name">
+            <input type="text" placeholder="Nhập số điện thoại" [(ngModel)]="number">
+            <input type="text" placeholder="Địa chỉ nhận hàng" [(ngModel)]="addres">
+            <button (click)="isShowform=false">Lưu Thông Tin</button>
+
+
+        </div>
+        <div class="infoaccount">
+            <img src="https://lh3.googleusercontent.com/proxy/xpZEknjG3O1BBewZTajyWZBhVRJ2Na_8g5Gddrjl4KCCWCibqpjL8q3IOIRvWsbUwFxhe6CIeucMgVgW2xi7jF6A5_mAWgujZ8bsewyIWoIb6fXfgDsS3-C6cXAcfjSxjkJTnztKHKJ27VHabwGnzCqqmM-hc3mZcnG-vNPPHlAz9r36uTnjiF3_rqvISQDF8pURRutypw"
+                alt="">
+            <h3>{{name}}</h3>
+            <h4>{{number}}</h4>
+            <h5>{{addres}}</h5>
+        </div>
+
+    </div>
+    <div class="slider">
+
+
+        <img src="http://i.imgur.com/9eH4nSp.jpg" alt="">
+    </div>
+
+</div>

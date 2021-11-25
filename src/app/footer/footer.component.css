@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    background-color: #ffff;
+    position: fixed;
+
+    bottom: 0px;
+}
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+.container i {
+    padding: 5px 30px;
+    font-size: 50px;
+}

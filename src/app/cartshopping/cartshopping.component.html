@@ -1,0 +1,19 @@
+<div class="product-list">
+    <div class="container">
+        <p>CART PRODUCTS: Total {{total}}</p>
+        <button (click)="paypal(cart)" class="product-buy-btn">Thanh Toán</button>
+    </div>
+    <div class="product">
+        <div *ngFor="let product of cart" class="product-item">
+            <img src="{{product.image}}" alt=" ">
+            <div class="product-body">
+                <h3 class="product-heading">{{product.name}}</h3>
+                <h3>{{product.price}}</h3>
+                <button (click)="cleanToCart(product)" class="product-buy-btn">Xóa khỏi giỏ hàng</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
