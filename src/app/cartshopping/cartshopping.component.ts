@@ -21,9 +21,11 @@ export class CartshoppingComponent implements OnInit {
 
   }
   cleanToCart(product: any) {
-    this.cartService.cleanCart(product)
+    this.cartService.cleanCart(product);
+    return this.total = this.total -= product.price;
   }
   paypal(product: any) {
-    this.cartService.paypaltoCart(product)
+    this.cartService.paypaltoCart(product);
+     return this.total = 0;
   }
 }
